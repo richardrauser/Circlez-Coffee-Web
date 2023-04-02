@@ -1,0 +1,18 @@
+
+
+.membershipCard {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.membership {
+  padding: 16px;
+}
+
+.info {
+  margin-top: 16px;
+}
+
+.action {
+  margin-bottom: 16px;
+}

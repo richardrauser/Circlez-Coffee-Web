@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.statusSpan {
+  margin-right: 8px;    
+}
+
+.statusIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.textContainer {
+  margin-left: 20px;
+}
+
+.unlocked {
+  background-color: #32C671;
+  border-color: #32C671;
+  --bs-btn-hover-bg: green; 
+  --bs-btn-hover-border-color: green;
+}
+
+.locked {
+  
+}

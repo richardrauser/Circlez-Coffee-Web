@@ -1,0 +1,26 @@
+
+.imageArea {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+    text-align: center;
+
+}
+
+.twoColumn {
+  flex: 50%;
+  text-align: center;
+}
+
+.oneColumn {
+  flex: 100%;
+  text-align: center;
+  padding: 32px;
+}
+
+.claimButton {
+  width: 240px;
+  height: 60px;
+}
