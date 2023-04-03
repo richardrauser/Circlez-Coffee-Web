@@ -75,6 +75,9 @@ const About: NextPage = () => {
             The Circlez Coffee website and backend can be found <a target="_blank" href="https://replit.com/@RichardRauser/Circlez-Coffee-Website">in Replit</a>.
           </li>
           <li>
+            The Circlez Coffee website and backend source can also be found <a target="_blank" href="https://github.com/richardrauser/Circlez-Coffee-Web">in Github</a>.
+          </li>
+          <li>
             View the README.md files in those repos in order to build something like this yourself!
           </li>
         </ul>

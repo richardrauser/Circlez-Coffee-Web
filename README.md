@@ -5,6 +5,8 @@ You can see the Circlez Coffee Shopify storefront [here](https://circlez-coffee.
 
 This Repl is meant to be used with the [Circlez Coffee Shopify app](https://github.com/richardrauser/circlez-coffee-shopify) for token-gating. That needs to be run locally when your Shopify storefront is in development mode, so go and do that first and follow the steps in that README.md, then fork this Repl and follow the steps here. 
 
+You can also find the source for this, the Circlez Coffee website and backend, [in Github](https://github.com/richardrauser/Circlez-Coffee-Web). (Note that the repl is right up against the storage limit.. this can usually be mitigated by deleting the next.js build cache in /.next/cache)
+
 
 ## Getting Started
 
