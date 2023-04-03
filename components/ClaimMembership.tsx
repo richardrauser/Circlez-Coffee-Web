@@ -6,9 +6,7 @@ import { showErrorMessage } from '../utils/toasts'
 import { toast } from "react-toastify"
 import { useEffect, useState } from 'react'
 import styles from '../styles/ClaimMembership.module.css'
-
 import { useAddress } from "@thirdweb-dev/react";
-
 
 export default function ClaimMembership() {
   // select random color for initial color
@@ -43,7 +41,6 @@ export default function ClaimMembership() {
 
       if (!currentAddress) {
         console.log("not logged in");
-        // login();
         toast.info("You're not connected. Hit the Connect Wallet button at top right and try again, my lovely.");
         setClaiming(false);
         return;

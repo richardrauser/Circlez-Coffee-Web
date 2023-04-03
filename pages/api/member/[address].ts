@@ -19,18 +19,11 @@ export default async function handler(
     return;
   }
 
-  console.log("ADDRESS: " + req.query.address)
-
   try {
-
     const sdk = new ThirdwebSDK("mumbai")
     console.log("contract address: " + CC_MEMBERSHIP_CONTRACT_ADDRESS);
     const contract = await sdk.getContract(CC_MEMBERSHIP_CONTRACT_ADDRESS);
     const nfts = await contract.erc721.getOwned(req.query.address);
-
-    console.log(nfts);
-
-    console.log("Done");
 
     res.status(200).json(nfts[0]);
 

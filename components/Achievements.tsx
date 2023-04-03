@@ -23,7 +23,7 @@ export default function Achievements(props) {
     if (tokenIds.includes(CC_ACHIEVEMENTS_NUMBER_ONE_FAN_TOKEN_ID)) {
       numberOneFanLocked = false;
     }
-      if (tokenIds.includes(CC_ACHIEVEMENTS_FIVE_PURCHASES_TOKEN_ID)) {
+    if (tokenIds.includes(CC_ACHIEVEMENTS_FIVE_PURCHASES_TOKEN_ID)) {
       fivePurchasesLocked = false;
     }
   }
@@ -44,11 +44,11 @@ export default function Achievements(props) {
       imageSrc: '/Circlez-CoffeeNumber1Fan.png',
       altText: 'Circlez Coffee #1 Fan image',
       title: 'Circlez Coffee #1 Fan',
-      description: 'Buy the Circlez Coffee T-shirt, hoodie and ballcap to receive an exclusive track by BeanDaddy and the Circlez.',
+      description: 'Buy the Circlez Coffee T-shirt, hoodie and ballcap & get the track "I luv coffee" by LadyBean & the Circlez.',
       locked: numberOneFanLocked,
       actionLink: 'https://circlez-coffee.myshopify.com/collections/circlez-coffee-swag',
       actionText: 'Browse swag',
-      rewardLink: 'https://testnets.opensea.io',
+      rewardLink: 'https://testnets.opensea.io/assets/mumbai/0xdd1abd8de29d8a0aea01aa9413c4302678a78b87/0',
       rewardText: 'Get the track'
     },  
     {
@@ -63,9 +63,6 @@ export default function Achievements(props) {
       rewardText: 'Buy discounted coffee machines'
     }
     ]
-
-  console.log("ACHIEVEMENTS: " + JSON.stringify(achievements));
-  console.log("ACHIEVEMENT COUNT: " + achievements.length);
   
 return (
       <div>

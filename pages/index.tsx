@@ -13,10 +13,6 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        {/*         <h1 className={styles.title}>
-          Circlez Coffee Portal
-        </h1>
- */}
         <img
           alt=""
           src="/CirclezCoffeeLogo.png"

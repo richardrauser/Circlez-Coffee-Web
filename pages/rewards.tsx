@@ -15,8 +15,6 @@ const Membership: NextPage = () => {
   const { contract } = useContract(CC_MEMBERSHIP_CONTRACT_ADDRESS)
   const { data, isLoading, error } = useOwnedNFTs(contract, address)
 
-  console.log("DATA: " + data)
-
   return (
     <div>
       <h1>Rewards</h1>

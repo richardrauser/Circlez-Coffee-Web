@@ -23,17 +23,14 @@ export default async function handler(
   const color = body.color
   const ownerAddress = body.ownerAddress
 
-  console.log("COLOR: " + color)
-  console.log("OWNER: " + ownerAddress)
-
   if (!color) {
     console.log("Bad color.")
     res.status(400).json({ error: 'No colour supplied.' })
     return;
-    // } else if (!ownerAddress || ownerAddress.length < 40) {
-    //   console.log("Bad eth address.")
-    //   res.status(400).json({ error: 'Invalid ethereum address.' })
-    //   return;
+    } else if (!ownerAddress || ownerAddress.length < 40) {
+      console.log("Bad eth address.")
+      res.status(400).json({ error: 'Invalid ethereum address.' })
+      return;
   }
 
   try {
@@ -60,19 +57,14 @@ export default async function handler(
     const tx = await contract.erc721.mint({
       name: "Circlez Coffee Membership",
       description: "Circlez Coffee membership conferring numerous benefits.",
-      image: fs.readFileSync(pngFileName), // This can be an image url or file
+      image: fs.readFileSync(pngFileName), 
     });
 
-    console.log("MINT TX: " + JSON.stringify(tx));
-
     const tokenId = tx.id;
-
     console.log("Transferring token ID " + tokenId + " to address " + ownerAddress + "..")
-
     await contract.erc721.transfer(ownerAddress, tokenId)
 
-    console.log("Done");
-
+    console.log("Mint and transfer of membership NFT complete.");
     res.status(200).json(tx);
 
   } catch (error) {

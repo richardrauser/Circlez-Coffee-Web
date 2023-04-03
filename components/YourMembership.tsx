@@ -16,7 +16,6 @@ export default function YourMembership(props) {
   const tokenId = nft.metadata.id;
   const openSeaLink = "https://testnets.opensea.io/assets/mumbai/" + CC_MEMBERSHIP_CONTRACT_ADDRESS + "/" + tokenId;
 
-
   return (
     <div>
       <p>

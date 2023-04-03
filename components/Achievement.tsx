@@ -32,7 +32,7 @@ export default function Achievement(props: AchievementProps) {
           {title}
         </h2>
         <p>{description}</p>
-        <Button href={locked ? actionLink : rewardLink} className={!locked ? styles.unlocked: styles.locked}>{locked ? actionText : rewardText}</Button>
+        <Button target="_blank" href={locked ? actionLink : rewardLink} className={!locked ? styles.unlocked: styles.locked}>{locked ? actionText : rewardText}</Button>
       </div>
     </div>
   );
