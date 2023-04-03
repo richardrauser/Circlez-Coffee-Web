@@ -1,3 +1,5 @@
+# Circlez Coffee Website and Backend
+
 This is a submission for the [Shopify x Thirdweb Replit Bounty](https://replit.com/bounties/@thirdwebShopify/build-a-shopify-bloc). It is a fully formed, functional demo of a gamified membership and rewards scheme built on the blockchain for a fictional coffee brand, Circlez Coffee. It demonstrates the technology of Replit, Shopify and Thirdweb, including Shopify Apps, Blockchain components, token gating, Thirdweb Minting and CommerceKit, along with their node packages and APIs.
 
 You can see the Circlez Coffee website running [here](https://circlez-coffee.myshopify.com/).
