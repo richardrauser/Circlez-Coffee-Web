@@ -1,24 +1,16 @@
-Welcome to the NextJS base template bootstrapped using the `create-next-app`. This template supports TypeScript, but you can use normal JavaScript as well.
+This is a submission for the [Shopify x Thirdweb Replit Bounty](https://replit.com/bounties/@thirdwebShopify/build-a-shopify-bloc). It is a fully formed, functional demo of a gamified membership and rewards scheme built on the blockchain for a fictional coffee brand, Circlez Coffee. It demonstrates the technology of Replit, Shopify and Thirdweb, including Shopify Apps, Blockchain components, token gating, Thirdweb Minting and CommerceKit, along with their node packages and APIs.
+
+This Repl is meant to be used with the [Circlez Coffee Shopify app](https://github.com/richardrauser/circlez-coffee-shopify) for token-gating. That needs to be run locally when your Shopify storefront is in development mode, so go and do that first follow the steps in that README.md, then fork this Repl and follow the steps here. 
+
 
 ## Getting Started
 
+- You'll need to setup your Shopify storefront, tokengating app and extensions first, so [checkout this repo and follow the instructions in its README.md](https://github.com/richardrauser/circlez-coffee-shopify).
+- This web app receives a callback from a webhook in Shopify whenever an order is created. This is where NFTs are created for achievements. Set up a webhook pointing at <your repl>/api/member/create from the Shopify admin dashboard for the Order Creation event.
+-- Vist your Shopify store admin, go to Settings > Notifications, and see the webhooks section at bottom.
+- You need to create smart contracts to support your own membership and loyalty scheme. Do this from the [Thirdweb Contracts dashboard](https://thirdweb.com/dashboard/contracts).
+-- The main membership scheme should be an ERC-721 if you want to be able to allow users to select their own membership colour, as per this demo. This is because each membership NFT is a one-of-one, i.e. unique, because of the colour choice.
+-- Achievements smart contracts should be ERC-1155s as as these are 1 of x NFTs, i.e. an edition NFT where each item in the edition.
+- Configure the smart contract addresses and token IDs in utils/constants.js. You don't need to include as many as you find here if you want a simpler scheme.
+ 
 Hit the run button to start the development server.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on `/api/hello`. This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-## Productionizing your Next App
-
-To make your next App run smoothly in production make sure to [turn this repl to an always-on repl.](https://docs.replit.com/hosting/enabling-always-on)
-
-You can also produce a production build by running `npm run build` and [changing the run command](https://docs.replit.com/programming-ide/configuring-repl#run) to `npm run start`.

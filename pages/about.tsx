@@ -63,8 +63,6 @@ const About: NextPage = () => {
           </li>
           <li>
             Circlez Coffee Membership smart contract created and deployed to Mumbai using <a target="_blank" href="https://thirdweb.com/thirdweb.eth/TokenERC721">ThirdWeb NFT Collection Contract</a>.
-
-
           </li>
         </ul>
       </div>
